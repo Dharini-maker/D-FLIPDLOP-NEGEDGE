@@ -47,11 +47,11 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
  D-FLIP FLOP WITH NEGATIVE EDGE TRIGGER:
 
-module d_ff_neg_edge (d, clk, rst, q);
+    module d_ff_neg_edge (d, clk, rst, q);
 
-  input d, clk, rst;
+    input d, clk, rst;
   
-  output reg q;
+    output reg q;
 
   
   always @(negedge clk or posedge rst) begin
@@ -64,9 +64,9 @@ module d_ff_neg_edge (d, clk, rst, q);
     
       q <= d; // D input is passed to Q on the negative clock edge
   
-  end
+    end
 
-endmodule
+   endmodule
 
 
 **RTL LOGIC FOR FLIPFLOP**
