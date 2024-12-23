@@ -54,7 +54,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
     output reg q;
 
   
-  always @(negedge clk or posedge rst) begin
+    always @(negedge clk or posedge rst) begin
   
     if (rst)
     
@@ -66,7 +66,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
   
     end
 
-   endmodule
+    endmodule
 
 
 **RTL LOGIC FOR FLIPFLOP**
